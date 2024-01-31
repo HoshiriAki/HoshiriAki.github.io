@@ -2431,8 +2431,8 @@ input[type="range"] {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--btn-content);
-  fill: var(--btn-content);
+  color: var(--primary);
+  fill: var(--primary);
 }
 .widget {
   line-height: 1.6em;
