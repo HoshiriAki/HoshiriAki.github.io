@@ -1925,6 +1925,7 @@ a.article-title:active {
   place-items: center;
   display: grid;
   color: var(--neut-L50);
+  cursor: default;
   margin: 0 auto;
   border-radius: 16px 16px 0 0;
   padding: 0 20px;
