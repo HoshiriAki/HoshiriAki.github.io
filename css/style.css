@@ -2431,8 +2431,14 @@ input[type="range"] {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--primary);
-  fill: var(--primary);
+}
+.info-card .link-list .link-btn .link-pixiv {
+  align-items: flex-start;
+  justify-content: center;
+  fill: var(--btn-content);
+  transition: fill 0.15s ease-out, color 0.15s ease-out;
+  position: relative;
+  top: 3px;
 }
 .widget {
   line-height: 1.6em;
