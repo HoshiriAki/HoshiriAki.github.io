@@ -17,8 +17,9 @@
   <title>about | Hoshiri Aki&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="preload" href="/css/fonts/Roboto-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
-  <link rel="preload" href="/css/fonts/Roboto-Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+  <link rel="preload" href="/css/fonts/SourceHanSerifCN-SemiBold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+  <link rel="preload" href="/css/fonts/SourceHanSerifCN-Heavy.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/nprogress@0.2.0/nprogress.css">
 
   <meta property="og:type" content="website">
 <meta property="og:title" content="about">
@@ -41,6 +42,7 @@
 <meta name="generator" content="Hexo 7.1.1"></head>
 
 <body>
+  
   
    
   <div id="main-grid" class="  ">
@@ -192,6 +194,11 @@
                 The Beginning
                 <div class="category-count">1</div>
             </a>
+        
+            <a class="category-link" href="/categories/OF-MINE/">
+                OF MINE
+                <div class="category-count">1</div>
+            </a>
         </div>
     </div>
   </div>
@@ -209,7 +216,7 @@
       
         <a class="archive-link" href="/archives/2024/02 ">
           二月 2024 
-          <div class="archive-count">1 </div>
+          <div class="archive-count">2 </div>
         </a>
       
     </div>
@@ -222,6 +229,12 @@
     <div class="widget">
       <h3 class="widget-title">最新文章</h3>
       <ul>
+        
+          <a class="recent-link" href="/2024/02/12/Reply-Teacher-s-Moments-Post/" title="Reply:Teacher's Moments Post(CN ONLY)" >
+            <div class="recent-link-text">
+              Reply:Teacher&#39;s Moments Post(CN ONLY)
+            </div>
+          </a>
         
           <a class="recent-link" href="/2024/02/01/Hello-MY-FRIEND-CN-EN-JP/" title="Hello!!! MY FRIEND!!! (CN/EN/JP)" >
             <div class="recent-link-text">
@@ -259,11 +272,18 @@
 </div>
 
         <div class='meta-info-bar'>
-          <div class="meta-info">
+          
+              <div class="meta-info">
+                  <!-- 未置顶时仅显示文章日期 -->
+                  <div class="meta-info">
   <time class="dt-published" datetime="2024-01-28T00:59:32.000Z" itemprop="datePublished">2024-01-28</time>
 </div>
+              </div>
+          
+      
           <div class="need-seperator meta-info">
-            <div class="meta-cate-flex">
+              <!-- 显示文章分类 -->
+              <div class="meta-cate-flex">
   
     未分类 
    
@@ -271,7 +291,8 @@
   
           </div>
           <div class="wordcount need-seperator meta-info">
-            0 词 
+              <!-- 显示文章字数 -->
+              0 词 
           </div>
         </div>
         
@@ -281,11 +302,19 @@
           
         
       </div>
-
+      <center>
+        <div style="background-color: rgba(255, 236, 48, 0.35); margin: 0 7px; padding: 5px; text-align: center; border-radius: 15px; display: inline-flex; align-items: center; --darkreader-inline-bgcolor: rgba(131, 119, 0, 0.35);" data-darkreader-inline-bgcolor="">
+            <span style="color: rgb(228, 77, 38); font-size: 23px; margin-right: 5px; margin-left: 7px; margin-top: 2px; --darkreader-inline-color: #e65d3a;" data-darkreader-inline-color="">⚠</span>
+            <strong style="vertical-align: middle; color:var(--article-text); font-weight: bold;">Warning：</strong> <a style="color:var(--article-text);margin-right: 7px;">This article is licensed under a CC BY-SA 4.0 License. <br> you choose to reproduce or share this content, please provide proper attribution.</a>
+        </div>
+    </center>
+    
          
     </div>
     
      
+    
+    
   </div>
   
     
@@ -356,5 +385,15 @@
 
   </div>
   <script src="/js/light-dark-switch.js"></script>
+      
+  <script src="https://unpkg.com/nprogress@0.2.0/nprogress.js"></script>
+  <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          NProgress.start();
+          window.onload = function() {
+              NProgress.done();
+          };
+      });
+  </script>
 </body>
 </html>

@@ -294,13 +294,23 @@ a {
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/Roboto-Regular.ttf") format("truetype");
+  src: url("fonts/SourceHanSerifCN-SemiBold.ttf") format("truetype");
 }
 @font-face {
   font-family: Roboto;
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/Roboto-Bold.ttf") format("truetype");
+  src: url("fonts/SourceHanSerifCN-Heavy.ttf") format("truetype");
+}
+@font-face {
+  font-family: FiraCode;
+  font-style: normal;
+  src: url("fonts/FiraCode-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: AWAVE;
+  font-style: normal;
+  src: url("fonts/AWAVE-Italics-Regular.otf") format("opentype");
 }
 body,
 #container {
@@ -308,7 +318,7 @@ body,
   height: 100%;
 }
 body {
-  font: 16px "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font: 16px "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "FiraCode", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-text-size-adjust: 100%;
   background: var(--page-background);
   background-size: 240px;
@@ -721,6 +731,7 @@ navbar {
 }
 #title-nav {
   margin-left: 16px;
+  font-family: AWAVE;
 }
 #title-nav a {
   color: var(--btn-text-content);
@@ -1187,7 +1198,7 @@ a.article-title:active {
 .article-entry footer {
   font-size: 16px;
   margin: 1.6em 0;
-  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "FiraCode", "Droid Sans", "Helvetica Neue", sans-serif;
   text-align: right;
 }
 .article-entry footer cite:before {
@@ -1452,6 +1463,16 @@ a.article-title:active {
      object-fit: cover;
   margin: 0 auto;
   max-height: 40vh;
+}
+code {
+  font-family: Fira Code;
+  font-style: normal;
+  font-size: 16px;
+}
+.code {
+  font-family: Fira Code;
+  font-style: normal;
+  font-size: 16px;
 }
 .comment-card {
   padding: 32px 40px 0 40px;
@@ -1957,7 +1978,7 @@ a.article-title:active {
 }
 .article-entry pre,
 .article-entry code {
-  font-family: "JetBrains Mono", "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
+  font-family: "FiraCode", "JetBrains Mono", "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
 }
 .article-entry code {
   background: var(--article-code-bg);
@@ -2017,7 +2038,7 @@ a.article-title:active {
 }
 .article-entry .gist .gist-file {
   border: none;
-  font-family: "JetBrains Mono", "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
+  font-family: "FiraCode", "JetBrains Mono", "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
   margin: 0;
   padding: 12px;
 }
@@ -2041,7 +2062,7 @@ a.article-title:active {
 .article-entry .gist .gist-file .gist-meta {
   color: #999;
   background: var(--dark-L20);
-  font: 0.85em "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font: 0.85em "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "FiraCode", "Droid Sans", "Helvetica Neue", sans-serif;
   text-shadow: 0 0;
   padding: 0;
   margin-top: 8px;
